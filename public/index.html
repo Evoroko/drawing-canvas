@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+  </head>
+<body>
+<canvas id="canvas" class="canvas"></canvas>
+
+  <div class="cursors">
+    <div>
+      <label for="color">Color</label>
+      <input type="color" id="color" name="color"
+             value="#a9abda">
+    </div>
+  
+    <div>
+      <label for="stroke">Stroke</label>
+      <input type="range" id="stroke" name="stroke"
+             min="1" max="10" value="3">
+    </div>
+  
+    <div>
+      <button id="clear">Clear</button>
+    </div>
+
+    <div>
+      <button id="fill">Fill</button>
+    </div>
+  </div>
+
+  <div class="functions">
+    <div>
+      <button id="display">Display</button>
+    </div>
+    
+    <div>
+      <button id="download">Download</button>
+    </div>
+  </div>
+
+  <img src="" id="imgConverted" class="imgConverted" alt="">
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.canvas{
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    touch-action: none; /*Empêche le scroll avec la tablette graphique*/
+}
+
+.cursors{
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    align-items: center;
+}
+
+.cursors > * {
+    margin-right: 16px;
+}
+
+.functions{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.functions > * {
+    margin: 16px;
+}
